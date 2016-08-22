@@ -1,98 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/launcher_shape"
-    tools:context="com.brioal.lzuwelcome.activity.ActMainActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.brioal.lzuwelcome.activity.MainActivity">
 
-    <ImageView
-        android:id="@+id/launcher_logo"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@mipmap/ic_logo"/>
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <LinearLayout
-        android:id="@+id/launcher_layout"
+    </android.support.v4.view.ViewPager>
+
+    <com.brioal.bottomtab.view.BottomLayout
+        android:background="@color/colorWhite"
+        android:id="@+id/main_bottom_tab"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0"
-            android:gravity="center"
-            android:text="兰 大 迎 新"
-            android:textColor="@color/colorWhite"
-            android:textSize="29sp"
-            android:typeface="serif"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:alpha="0"
-            android:gravity="center"
-            android:text="专注迎新,但不止迎新"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp"
-            android:typeface="serif"/>
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:scaleX="0"
-            android:scaleY="0"
-            android:text="登陆"
-            android:textColor="@color/colorWhite"
-            android:theme="@style/launcher_btn_theme"/>
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:padding="5dp"
-            android:scaleX="0"
-            android:scaleY="0"
-            android:text="随便看看"
-            android:textColor="@color/colorWhite"
-            android:theme="@style/launcher_btn_theme"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Copyright www.brioal.cn"
-            android:textColor="@color/colorWhite"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="All Rights Reserved "
-            android:textColor="@color/colorWhite"
-            android:textSize="14sp"/>
-
-    </LinearLayout>
-
-</RelativeLayout>
+    </com.brioal.bottomtab.view.BottomLayout>
+</LinearLayout>

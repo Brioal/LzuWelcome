@@ -2,20 +2,33 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.brioal.lzuwelcome">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+        android:name=".activity.LzuApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/LzuTheme">
         <activity
-            android:name=".activity.ActMainActivity"
-            android:theme="@style/AppTheme.LauncherTheme">
+            android:name=".activity.LauncherActivity"
+            android:theme="@style/LzuTheme.LauncherTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/LzuTheme.NoActionbar">
+
+        </activity>
+        <activity android:name=".activity.MainActivity"
+            android:theme="@style/LzuTheme.NoActionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
     </application>
 

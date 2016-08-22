@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_info_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_head_default"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="25sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_tip"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="下面列表点击可以查看同院，同专业，同班的同学"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/ic_grade"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/ic_more"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="年级："
+            android:textColor="@color/colorLightBlack"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/ic_aca"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/ic_more"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="学院："
+            android:textColor="@color/colorLightBlack"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/ic_major"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/ic_more"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="专业："
+            android:textColor="@color/colorLightBlack"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/ic_class"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/ic_more"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="班级："
+            android:textColor="@color/colorLightBlack"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+</ScrollView>

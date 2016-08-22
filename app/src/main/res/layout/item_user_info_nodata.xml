@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/user_info_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/user_btn_bg"
+        android:text="完善信息"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_info_btn_add"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="完善个人信息有助于找到同班，同院的同学哦~"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+</RelativeLayout>

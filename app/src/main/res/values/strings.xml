@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LzuWelcome</string>
+    <string name="forget_pass"><u>忘记密码</u></string>
 </resources>

@@ -1,0 +1,20 @@
+[
+    {
+     "Key": "JWCCodeGet",
+     "Expires": 0,
+      "IsGet": false,
+      "Url": "http://jwk.lzu.edu.cn/academic/common/security/login.jsp"
+    },
+     {
+     "Key": "JwcLogin",
+     "Expires": 0,
+      "IsGet": false,
+      "Url": "http://jwk.lzu.edu.cn/academic/j_acegi_security_check;"
+    },
+     {
+         "Key": "Weather",
+         "Expires": 0,
+          "IsGet": true,
+          "Url": "http://op.juhe.cn/onebox/weather/query"
+        }
+]
